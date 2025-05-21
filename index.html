@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>👨‍💻 Welcome to My Portfolio</h1>
+  <p id="keyDisplay">Press any key to discover a skill!</p>
+
+  <!-- Hover box for fun intro -->
+  <div id="hoverBox">👋 Hover to learn about me!</div>
+
+  <!-- Click surprise -->
+  <button id="clickBtn">Click for a fun fact</button>
+
+  <!-- Tabs: About, Projects, Skills, Contact -->
+  <div class="tab">
+    <button class="tabBtn" data-tab="1">About Me</button>
+    <button class="tabBtn" data-tab="2">Projects</button>
+    <button class="tabBtn" data-tab="3">Skills</button>
+    <button class="tabBtn" data-tab="4">Contact</button>
+  </div>
+
+  <div id="tabContent1" class="tabContent">
+    <p>Hi, I'm Longoli Eyanae, an aspiring AI software engineer passionate about building smart, responsive web applications.</p>
+  </div>
+
+  <div id="tabContent2" class="tabContent" style="display: none;">
+    <img id="galleryImg" src="https://www.freepik.com/free-photo/html-css-collage-concept-with-person_36295458.htm#fromView=keyword&page=1&position=1&uuid=74a99e50-4203-481a-8693-8f3ac14dcae5&query=Ai+Engineer" />
+    <button id="nextImg">Next Project</button>
+  </div>
+
+  <div id="tabContent3" class="tabContent" style="display: none;">
+    <ul>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>HTML/CSS</li>
+      <li>AI & Machine Learning (beginner)</li>
+    </ul>
+  </div>
+
+  <div id="tabContent4" class="tabContent" style="display: none;">
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="formMsg"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
